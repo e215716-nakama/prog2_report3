@@ -30,7 +30,7 @@ public class Enemy extends LivingThing {
         setHitPoint(getHitPoint()-damage);
         if( getHitPoint() < 0 ) {
             setDead(true);
-            System.out.printf("勇者%sは道半ばで力尽きてしまった。\n", getName());
+            System.out.printf("モンスター%sは倒れた。\n", getName());
         }
     }
 }
